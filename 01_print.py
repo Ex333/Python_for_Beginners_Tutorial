@@ -25,4 +25,4 @@ print(1, 2 , 3, 4, 5, sep='-')
 print('backslash', 'is', 'used', 'to', 'escape', 'characters', sep='\\')
 print('newline', 'is', 'used', 'to', 'start', 'a', 'new', 'line', sep='\n')
 
-print(x, y, z, sep='-')  # This line will raise an error because x, y, z are not defined
+#print(x, y, z, sep='-')  # This line will raise an error because x, y, z are not defined
