@@ -27,3 +27,10 @@ print(f"Updated departure queue after moving delayed flight: {departure_queue}")
 #Remove the first flight because it has taken off
 departed_flight = departure_queue.pop(0) # Remove the first flight (KLM987) from the queue
 print(f"Flight {departed_flight} has taken off. Updated departure queue: {departure_queue}")
+
+#Find the index of a specific flight in the queue
+flight_to_find = "DL345"
+if flight_to_find in departure_queue:
+    flight_index = departure_queue.index(flight_to_find)
+    print(f"Flight {flight_to_find} is at index {flight_index} in the departure queue.")
+    
