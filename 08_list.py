@@ -22,3 +22,8 @@ print(f"Third flight in the departure queue: {departure_queue[2]}")
 delayed_flight = departure_queue.pop(1) # Remove the second flight (AF456) from the queue
 departure_queue.append(delayed_flight) # Add it to the end of the queue
 print(f"Updated departure queue after moving delayed flight: {departure_queue}")
+
+
+#Remove the first flight because it has taken off
+departed_flight = departure_queue.pop(0) # Remove the first flight (KLM987) from the queue
+print(f"Flight {departed_flight} has taken off. Updated departure queue: {departure_queue}")
