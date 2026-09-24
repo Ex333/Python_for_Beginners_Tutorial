@@ -44,3 +44,10 @@ for index, number in enumerate(numbers):
 for index, number in enumerate(numbers):
     if number > 5:
         print(index, number)
+
+# 9 
+numbers = [4, 7, 2, 9, 6, 11]
+
+for number in numbers:
+    if number % 2 == 0 and number > 5:
+        print(number)
