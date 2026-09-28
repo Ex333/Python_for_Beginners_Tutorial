@@ -1,3 +1,5 @@
+from datetime import datetime
+
 servers = ["web-01", "web-02", "db-01", "backup-01"]
 
 cpus = [45, 91, 72, 20]
@@ -31,3 +33,7 @@ print(id(lista2))
 
 for server, cpu, ram, status in zip(servers,cpus, rams, statuses):
    print(server, cpu, ram, status)
+
+czas = datetime.now()
+
+print(czas.strftime("%Y-%m-%d %H:%M:%S"))
