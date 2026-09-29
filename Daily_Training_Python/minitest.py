@@ -10,7 +10,11 @@ guessed_number = -1
 print("WELCOME IN MY GAME! You must guess the number in range 1-10, have fun and you have only 3 tries...")
 name = input("what is your name:")
 
+while not name.isalpha():
+    print("name can contain only letters!")
+    name = input("what is your name:") 
+
 print(f"let's begin! {name} our jurney u started at: {time}!")
 
-while guessed_number == number or tries == 0:
+while guessed_number != number and tries > 0:
     pass
