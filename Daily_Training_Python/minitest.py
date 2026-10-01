@@ -1,40 +1,27 @@
 from random import randint
-from datetime import datetime
+from art import text2art
 
-time = datetime.now()
-time = time.strftime("%H:%M:%S")
-number = randint(1, 10)
-tries = 3
-guessed_number = -1
+print(text2art("GUESS THE NUMBER    1- 10"))
 
-print("WELCOME IN MY GAME! You must guess the number in range 1-10, have fun and you have only 3 tries...")
-name = input("what is your name:")
+number_to_guess = randint(1, 10)
 
-# while not name.isalpha():
-#     print("name can contain only letters!")
-#     name = input("what is your name:") 
+guessed = -1
+tries = 4
+attempts = 0
 
-# print(f"let's begin! {name} our jurney u started at: {time}!")
+while guessed != number_to_guess and tries > 0:
 
-# while guessed_number != number and tries > 0:
-#     pass
+    guessed = int(input("Guess the number!: "))
+    attempts += 1
+    tries -= 1
 
-# password = input("enter your password!")
+    if guessed == number_to_guess:
+        print(f"Congratulations! You guessed it in {attempts} attempt(s)!")
 
-# while len(password) < 8:
-#     print("password lenght musst be at least 8 charakters!")
-#     password = input("enter your password!")
+    elif guessed < number_to_guess:
+        print("Too low!")
 
-#validacja imienia
+    else:
+        print("Too high!")
 
-tries = 0
-
-while tries < 3:
-    age = int(input("Enter your age: "))
-
-    if 18 <= age <= 100:
-        print("Correct!")
-        break
-
-    print("Wrong age!")
-    tries += 1
+    print(f"Tries left: {tries}")
