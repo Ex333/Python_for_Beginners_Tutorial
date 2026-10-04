@@ -25,3 +25,5 @@ while guessed != number_to_guess and tries > 0:
         print("Too high!")
 
     print(f"Tries left: {tries}")
+
+# print('FLORIAN!!!!!!'.capitalize()())
