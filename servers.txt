@@ -1,0 +1,137 @@
+SERVER MONITORING REPORT
+Date: 2026-10-25
+Environment: Production
+Region: Germany
+Administrator: Mateusz
+
+Server: web01
+IP: 192.168.1.10
+OS: Ubuntu Linux
+Service: nginx
+Status: running
+CPU: 23 percent
+Memory: 61 percent
+Disk: 72 percent
+Last check: 08:15
+Message: Web server is running normally
+
+Server: web02
+IP: 192.168.1.11
+OS: Ubuntu Linux
+Service: nginx
+Status: running
+CPU: 45 percent
+Memory: 70 percent
+Disk: 81 percent
+Last check: 08:16
+Message: High memory usage detected
+
+Server: db01
+IP: 192.168.1.20
+OS: Ubuntu Linux
+Service: postgresql
+Status: running
+CPU: 34 percent
+Memory: 82 percent
+Disk: 65 percent
+Last check: 08:17
+Message: Database connection successful
+
+Server: db02
+IP: 192.168.1.21
+OS: Ubuntu Linux
+Service: postgresql
+Status: stopped
+CPU: 0 percent
+Memory: 12 percent
+Disk: 55 percent
+Last check: 08:18
+Message: Database service is not responding
+
+Server: app01
+IP: 192.168.1.30
+OS: Ubuntu Linux
+Service: django
+Status: running
+CPU: 51 percent
+Memory: 64 percent
+Disk: 48 percent
+Last check: 08:19
+Message: Application started successfully
+
+Server: app02
+IP: 192.168.1.31
+OS: Ubuntu Linux
+Service: django
+Status: error
+CPU: 95 percent
+Memory: 97 percent
+Disk: 89 percent
+Last check: 08:20
+Message: Application response timeout
+
+Server: cache01
+IP: 192.168.1.40
+OS: Ubuntu Linux
+Service: redis
+Status: running
+CPU: 12 percent
+Memory: 42 percent
+Disk: 30 percent
+Last check: 08:21
+Message: Cache service operating normally
+
+Server: backup01
+IP: 192.168.1.50
+OS: Ubuntu Linux
+Service: backup
+Status: running
+CPU: 18 percent
+Memory: 35 percent
+Disk: 91 percent
+Last check: 08:22
+Message: Warning disk space is almost full
+
+Server: monitor01
+IP: 192.168.1.60
+OS: Ubuntu Linux
+Service: prometheus
+Status: running
+CPU: 29 percent
+Memory: 58 percent
+Disk: 44 percent
+Last check: 08:23
+Message: Metrics collection successful
+
+Server: grafana01
+IP: 192.168.1.61
+OS: Ubuntu Linux
+Service: grafana
+Status: running
+CPU: 15 percent
+Memory: 49 percent
+Disk: 38 percent
+Last check: 08:24
+Message: Dashboard is available
+
+LOG ENTRIES
+
+08:30 INFO web01 nginx started successfully
+08:31 INFO web02 nginx request received
+08:32 WARNING web02 memory usage above threshold
+08:33 ERROR db02 postgresql connection failed
+08:34 INFO app01 django request processed
+08:35 ERROR app02 application timeout
+08:36 WARNING backup01 disk space critical
+08:37 INFO cache01 redis cache refreshed
+08:38 ERROR app02 database connection refused
+08:39 INFO monitor01 prometheus metrics collected
+08:40 WARNING db01 database memory usage high
+08:41 INFO grafana01 dashboard loaded
+08:42 ERROR web02 connection timeout
+08:43 INFO backup01 backup completed
+08:44 WARNING app01 response time elevated
+08:45 INFO db01 database query completed
+08:46 ERROR db02 service unavailable
+08:47 INFO web01 HTTP request completed
+08:48 WARNING
