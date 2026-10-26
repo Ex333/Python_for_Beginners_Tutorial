@@ -41,3 +41,7 @@ backup = servers[:]
 backup.append("somethig01")
 print(servers)
 print(backup)
+
+# we can also use the copy()
+
+backup = servers.copy()
