@@ -1,5 +1,6 @@
 with open("servers.txt", "r", encoding="utf-8") as file:
-    for line in file:
+    content = file.readlines()
+    for line in content:
         for word in line.split():
-            print(word)
             print(type(word))
+            print(type(content))
